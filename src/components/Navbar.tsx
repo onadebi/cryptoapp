@@ -1,4 +1,3 @@
-import React from 'react';
 import {Button, Menu, Typography, Avatar} from 'antd';
 import {NavLink} from 'react-router-dom';
 import icon from '../images/cryptocurrency.png';

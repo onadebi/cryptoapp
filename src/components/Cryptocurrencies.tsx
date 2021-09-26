@@ -1,6 +1,4 @@
-﻿import React from 'react'
-
-const Cryptocurrencies = () => {
+﻿const Cryptocurrencies = () => {
     return (
         <div>
             Cryptocurrencies

@@ -1,9 +1,7 @@
-﻿import React from 'react'
-
-const CryptoDetails = () => {
+﻿const CryptoDetails = () => {
     return (
         <div>
-            
+            CryptoDetails 2562356235
         </div>
     )
 }

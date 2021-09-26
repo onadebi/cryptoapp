@@ -3,10 +3,15 @@ import {Switch, Route, NavLink, BrowserRouter as Router} from 'react-router-dom'
 import {Layout, Typography, Space} from 'antd';
 import {Navbar,Homepage,Exchanges,Cryptocurrencies,CryptoDetails,News} from './components/'
 import './App.css';
+// import Sidebar from './components/demos/Sidebar';
+
 
 function App(): JSX.Element {
   return (
     <Router>
+          {/* <Switch>
+            <Route exact path="./demo"><Sidebar/></Route>
+          </Switch> */}
       <div className="app">
         <div className="navbar">
           <Navbar/>
@@ -23,9 +28,17 @@ function App(): JSX.Element {
               </Switch>
             </div>
           </Layout>
-        </div>
         <div className="footer">
-
+          <Typography.Title level={5} style={{color:'white',textAlign:'center'}}>
+            Cryptoverse<br/>
+            All rights reserved.
+          </Typography.Title>
+          <Space>
+            <NavLink to='/'>Home</NavLink>
+            <NavLink to='/exchanges'>Exchanges</NavLink>
+            <NavLink to='/news'>News</NavLink>
+          </Space>
+        </div>
         </div>
       </div>
     </Router>
